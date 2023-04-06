@@ -6,7 +6,8 @@
 \usage{
 predict_topology_from_sequence(
   protein_sequence,
-  folder_name = get_default_pureseqtm_folder()
+  folder_name = get_default_pureseqtm_folder(),
+  temp_fasta_filename = tempfile(fileext = ".fasta")
 )
 }
 \arguments{
@@ -18,13 +19,17 @@ example \code{MEILCEDNTSLSSIPNSL}}
 The superfolder's name is \code{/home/[user_name]/.local/share}
 by default, as can be obtained by
 \link{get_default_pureseqtm_folder}}
+
+\item{temp_fasta_filename}{temporary FASTA filename,
+which will deleted after usage}
 }
 \value{
 a topology as a string of zeroes and ones, where a one denotes
 that the corresponding amino acid is located within the membrane.
 }
 \description{
-Run PureseqTM directy on a protein sequence
+Will \link{stop} if the protein sequence is shorter than three
+amino acids.
 }
 \examples{
 if (is_pureseqtm_installed()) {

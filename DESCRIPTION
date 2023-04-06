@@ -1,6 +1,6 @@
 Package: pureseqtmr
 Title: Predict Transmembrane Protein Topology
-Version: 1.2
+Version: 1.4
 Authors@R: c(
     person("Richèl J.C.", "Bilderbeek", email = "richel@richelbilderbeek.nl", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1107-7049")))
 Description: Proteins reside in either the cell plasma or in the
@@ -15,20 +15,21 @@ Description: Proteins reside in either the cell plasma or in the
     allows one to use 'PureseqTM' from R.
 License: GPL-3
 Encoding: UTF-8
-LazyData: true
-RoxygenNote: 7.1.1
-Imports: ggplot2, plyr, rappdirs, stringr, tibble
-Suggests: testthat, knitr, rmarkdown
-URL: https://github.com/richelbilderbeek/pureseqtmr
-BugReports: https://github.com/richelbilderbeek/pureseqtmr
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5.0)
+Imports: data.table, devtools, dplyr, ggplot2, Peptides, plyr,
+        rappdirs, readr, stringr, tibble, Rcpp
+Suggests: testthat, knitr, markdown, rmarkdown, profvis
+URL: https://github.com/richelbilderbeek/pureseqtmr/
+BugReports: https://github.com/richelbilderbeek/pureseqtmr/
 VignetteBuilder: knitr
 SystemRequirements: PureseqTM
         (https://github.com/PureseqTM/pureseqTM_package)
-NeedsCompilation: no
-Packaged: 2020-07-25 13:10:07 UTC; richel
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2023-04-06 13:18:26 UTC; richel
 Author: Richèl J.C. Bilderbeek [aut, cre]
     (<https://orcid.org/0000-0003-1107-7049>)
 Maintainer: Richèl J.C. Bilderbeek <richel@richelbilderbeek.nl>
-Depends: R (>= 3.5.0)
 Repository: CRAN
-Date/Publication: 2020-07-30 10:50:02 UTC
+Date/Publication: 2023-04-06 13:40:02 UTC

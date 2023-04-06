@@ -20,7 +20,7 @@ if (is_pureseqtm_installed()) {
   head(readLines(fasta_filename))
 }
 
-## ----cache=TRUE---------------------------------------------------------------
+## -----------------------------------------------------------------------------
 if (is_pureseqtm_installed()) {
   topology <- predict_topology(fasta_filename)
   kable(topology)
@@ -42,7 +42,7 @@ expect_true(file.exists(fasta_filename))
 ## -----------------------------------------------------------------------------
 head(readLines(fasta_filename))
 
-## ----cache=TRUE---------------------------------------------------------------
+## -----------------------------------------------------------------------------
 if (is_pureseqtm_installed()) {
   topology <- predict_topology(fasta_filename)
 }

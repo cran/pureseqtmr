@@ -3,23 +3,35 @@
 #' @author Richèl J.C. Bilderbeek
 #' @examples
 #'   if (is_on_appveyor()) {
-#'     print("Running on AppVeyor")
+#'     message("Running on AppVeyor")
 #'   }
 #' @export
 is_on_appveyor <- function() {
-  Sys.getenv("APPVEYOR") != "" # nolint internal function
+  Sys.getenv("APPVEYOR") != ""
+}
+
+#' Determines if the environment is GitHub Actions
+#' @return \link{TRUE} if run on GitHub Actions, \link{FALSE} otherwise
+#' @author Richèl J.C. Bilderbeek
+#' @examples
+#'   if (is_on_github_actions()) {
+#'     message("Running on GitHub Actions")
+#'   }
+#' @export
+is_on_github_actions <- function() {
+  Sys.getenv("GITHUB_ACTIONS") != ""
 }
 
 #' Determines if the environment is Travis CI
 #' @return \link{TRUE} if run on Travis CI, \link{FALSE} otherwise
 #' @author Richèl J.C. Bilderbeek
 #' @examples
-#'   if (is_on_travis()) {
-#'     print("Running on Travis CI")
+#'   if (is_on_ci()) {
+#'     message("Running on Travis CI")
 #'   }
 #' @export
 is_on_travis <- function() {
-  Sys.getenv("TRAVIS") != "" # nolint internal function
+  Sys.getenv("TRAVIS") != ""
 }
 
 #' Determines if the environment is a continuous integration service
@@ -27,9 +39,11 @@ is_on_travis <- function() {
 #' @author Richèl J.C. Bilderbeek
 #' @examples
 #'   if (is_on_ci()) {
-#'     print("Running on a continuous integration service")
+#'     message("Running on a continuous integration service")
 #'   }
 #' @export
 is_on_ci <- function() {
-  is_on_appveyor() || is_on_travis() # nolint internal function
+  pureseqtmr::is_on_appveyor() ||
+  pureseqtmr::is_on_github_actions() ||
+  pureseqtmr::is_on_travis()
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/predict_topology.R
 \name{predict_topology}
 \alias{predict_topology}
-\title{Predict the topology of a proteome}
+\title{Predict the topology of proteins from file}
 \usage{
 predict_topology(
   fasta_filename,
@@ -27,13 +27,24 @@ and 'topology', where the 'name' column hold all the proteins' names,
 and 'topology' contains all respective topologies.
 }
 \description{
-Predict the topology of a proteome
+Predict the topology of zero, one or more proteins,
+of which the names and sequences are stored in the FASTA format
+}
+\note{
+unlike PureseqTM, the topologies predicted are returned in
+the same order as the original sequences.
+A bugreport is posted at the PureseqTM GitHub repository
+at \url{https://github.com/PureseqTM/PureseqTM_Package/issues/11}
 }
 \examples{
 if (is_pureseqtm_installed()) {
   fasta_filename <- get_example_filename("1bhaA.fasta")
   predict_topology(fasta_filename)
 }
+}
+\seealso{
+use \link{mock_predict_topology} to do a mock prediction,
+as can be useful in testing
 }
 \author{
 Richèl J.C. Bilderbeek
