@@ -1,4 +1,4 @@
-8490bfa187d283fe105da0f913cac54f *DESCRIPTION
+2fa58340a26e50405eb66c1cb19a38de *DESCRIPTION
 90bd581b72791438cb5e12176eb7ff3e *NAMESPACE
 c7606d7865ea7e60d74619f553480661 *R/RcppExports.R
 4a0280d39c78f9c0c19457de49869b43 *R/are_tmhs.R
@@ -38,17 +38,17 @@ a9a2b9e9bb4f8f11f72a25fe100c8354 *R/plot_topology.R
 105e04c1e1fa923d9374c2cd8c7422c5 *R/predict_topologies_from_sequences.R
 7eb971255f41c7f8d1d50b5ca647c9f5 *R/predict_topology.R
 fcccfe1172c8ced920fdcf9835063d94 *R/predict_topology_from_sequence.R
-8d5ddbd7c09e821237f5655cb6f6a666 *R/pureseqtmr.R
+1843945c8cc13fc0514ca063a9404571 *R/pureseqtmr-package.R
 998ff83b0e045bd8ba1b027e8c18e83b *R/pureseqtmr_report.R
 bebf51e47c06f99d27f6df6408a9aeb8 *R/run_pureseqtm_proteome.R
 c712436860bf74d4923858cd6091d7e7 *R/save_tibble_as_fasta_file.R
 4861b9c432046e52a7743feba96179c7 *R/tally_tmhs.R
 be1e4790a4d87f5e70ce74ca9e09636c *R/uninstall_pureseqtm.R
 ed4b274b617548212feb2d7b564eb67e *R/use_rcpp.R
-0cf581f17d03a5e360725e6cc3105d60 *build/vignette.rds
-61f217d2208ce5e714a4c51f55bad2b5 *inst/doc/demo.R
+2989f3a28b71b41a2e12da742f10df8b *build/vignette.rds
+67040ff1e1fccd5be33fc29abdda62b8 *inst/doc/demo.R
 c4f301eb414a4447b85bb338a21dc1cd *inst/doc/demo.Rmd
-e6e0cae1c15cf6c4d8c457621a0233a5 *inst/doc/demo.html
+55beefde682e20b6e157ea5f678627e1 *inst/doc/demo.html
 c9b576c0623cf003e651a9d814056f76 *inst/extdata/100507436.topo
 c48900a26dbc8965e6ca3515fb9a53e1 *inst/extdata/5728.fasta
 a8adc3962d7dbd6d545edae95be14676 *inst/extdata/5728.topo
@@ -60,7 +60,7 @@ d364fd52178bd4312a5146989d1d6530 *inst/extdata/garbage.fasta
 fd4db2028cb41a5bd5040a7d4dbf7747 *man/are_tmhs.Rd
 5a8af5b24370aba5e1ecc764e50b9896 *man/are_valid_protein_sequences.Rd
 c973e2a2e20341050edb19480b4eeef1 *man/calc_distance_to_tmh_center_from_topology.Rd
-18f7a83bae7375faeb1901b03a713c26 *man/calc_distance_to_tmh_center_from_topology_str.Rd
+dbcb88cdfd0918e6d5b9eec8c624ba27 *man/calc_distance_to_tmh_center_from_topology_str.Rd
 53091341ebacd2ccd73336624d56a62a *man/calc_distance_to_tmh_center_from_topology_str_cpp_stl.Rd
 eef836066c28c968dc011064e2b8931c *man/check_protein_sequence.Rd
 dfb0c5db62bb84b49001fb512aab36e5 *man/check_protein_sequences.Rd
@@ -75,7 +75,6 @@ fa63fcb2837dfb8a8f8040e8a0bf0377 *man/count_n_tmhs.Rd
 f7de71e5ff24145a37bf281e4d155cfa *man/figures/AppVeyor.png
 3f25ab37a1f6270f76c025cf6eda5421 *man/figures/Codecov.png
 b55c56f3943a394162527954ca4a3009 *man/figures/GitHubActions.png
-4f9bce317a2b82518737a7ee7381c2ec *man/figures/TravisCI.png
 4974742b25d647dd700c95636995d382 *man/figures/sars_cov_2_topology.png
 91c208cf797457e7321ed77acb7b3f53 *man/get_default_pureseqtm_folder.Rd
 99bb30dfa4f7b453a7885c62ab95e465 *man/get_example_filename.Rd
@@ -104,7 +103,7 @@ dfe8fc25581b976ac6a8b977ea2e069d *man/parse_pureseqtm_proteome_text.Rd
 bafcc27a2b2c5b47b3f6d37e38427eaf *man/predict_topologies_from_sequences.Rd
 1ffdaeba1354a8d07e351392d2b9319f *man/predict_topology.Rd
 b013dbcdc09f4262532377eafd528ef5 *man/predict_topology_from_sequence.Rd
-075892cb6d60f8c1bdbf0397b53aee2f *man/pureseqtmr.Rd
+ad5445451c105550e27e5fa16361decf *man/pureseqtmr-package.Rd
 ad5ec2546da3b12e6da965fe730e849d *man/pureseqtmr_report.Rd
 461e49e420a3642b64c02a69e79eb9f9 *man/run_pureseqtm_proteome.Rd
 0554f86e80d1f60f0fdbb27a47bf7fcd *man/save_tibble_as_fasta_file.Rd
